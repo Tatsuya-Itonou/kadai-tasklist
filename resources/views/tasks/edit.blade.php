@@ -1,11 +1,11 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('content')
   <h1>タスクを編集</h1>
   
   <div class="row">
         <div class="col-6">
-            {!! Form::model($task, ['route' => ['tasks.update',$task->id],'method' => 'put']) !!}
+            {!! Form::model($tasks, ['route' => ['tasks.update',$tasks->id],'method' => 'put']) !!}
         
                 <div class="form-group">
                     {!! Form::label('content', 'タスク') !!}
