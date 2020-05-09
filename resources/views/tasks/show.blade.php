@@ -9,11 +9,14 @@
         <tr class="bg-light">
             <th>id</th>
             <th>タスク</th>
+            <th>スタッツ</th>
         </tr>   
         <tr>
             <td>{{ $tasks->id }}</td>
             <td>{{ $tasks->content }}</td>
+            <td>{{ $tasks->status }}</td>
         </tr>
+        
             
     </table>
     
